@@ -4,7 +4,9 @@ Scripts and ressources for project thesis on generating synthetic image data in 
 ## Show_Annotations.py
 Script to display annotations.
 Arguments:
+
   -dir/--imagedir : Path to Folder with images
+  
   -csv/--csv : Path to CSV containing annotation in TF format
   
 ## UnityAnnotations_toCSV.py
