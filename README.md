@@ -3,22 +3,23 @@ Scripts and ressources for project thesis on generating synthetic image data in 
 
 ## Show_Annotations.py
 Script to display annotations.
+
 Arguments:
 
-  -dir/--imagedir : Path to Folder with images
+    -dir/--imagedir : Path to Folder with images
   
-  -csv/--csv : Path to CSV containing annotation in TF format
+    -csv/--csv : Path to CSV containing annotation in TF format
   
 ## UnityAnnotations_toCSV.py
 Script for converting the Annotations .json of [Unity Perception](https://github.com/Unity-Technologies/com.unity.perception) to a .csv that can be used with Tensorflow. The output looks like this: 
 
-filename,width,height,class,xmin,ymin,xmax,ymax
-rgb_13.png,101,128,SLC,792,0,893,128
-rgb_13.png,253,159,Pallet,15,0,268,159
-rgb_13.png,130,123,SLC,380,65,510,188
-rgb_13.png,147,125,SLC,625,329,772,454
-rgb_13.png,225,222,Pallet,140,315,365,537
-rgb_13.png,151,154,SLC,931,489,1082,643
+| filename | widthheight | class | xmin | ymin | xmax | ymax |
+| rgb_13.png | 101 | 128 | SLC | 792 | 0 | 893 | 128 |
+| rgb_13.png | 253 | 159 | Pallet | 15 | 0 | 268 | 159 |
+| rgb_13.png | 130 | 123 | SLC | 380 | 65 | 510 | 188 |
+| rgb_13.png | 147 | 125 | SLC | 625 | 329 | 772 | 454 |
+| rgb_13.png | 225 | 222 | Pallet | 140 | 315 | 365 | 537 | 
+| rgb_13.png | 151 | 154 | SLC | 931 | 489 | 1082 | 643 |
   
 ## Spread_Images.py
 Script to split images of one Folder into two folders in a special proportion.
