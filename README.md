@@ -1,14 +1,13 @@
-## unity_perception
-scripts and ressources for project thesis on generating synthetic image data in a logistics environment.
+Scripts and ressources for project thesis on generating synthetic image data in a logistics environment.
 
 
-# Show_Annotations.py
+## Show_Annotations.py
 Script to display annotations.
 Arguments:
   -dir/--imagedir : Path to Folder with images
   -csv/--csv : Path to CSV containing annotation in TF format
   
- # UnityAnnotations_toCSV
+## UnityAnnotations_toCSV.py
 Script for converting the Annotations .json of [Unity Perception](https://github.com/Unity-Technologies/com.unity.perception) to a .csv that can be used with Tensorflow. The output looks like this: 
 
 filename,width,height,class,xmin,ymin,xmax,ymax
@@ -19,10 +18,10 @@ rgb_13.png,147,125,SLC,625,329,772,454
 rgb_13.png,225,222,Pallet,140,315,365,537
 rgb_13.png,151,154,SLC,931,489,1082,643
   
-# Spread_Images.py
+## Spread_Images.py
 Script to split images of one Folder into two folders in a special proportion.
 
-#Spread_CSV.py
+## Spread_CSV.py
 Script for creating a new .csv for all images in a folder.
 Use case: after using Spread_Images.py, the images are split up into two folder, e.g. a "train" and "test" folder. 
 The corresponding .csv file is not split up yet. The script takes all rows of the entries in the given folder and creates a new .csv with these. 
